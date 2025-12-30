@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pi with Needles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://q5js.org/q5.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="pi-calculation">
+        <div>
+          <h1>Estimating Pi with Buffon's Needle</h1>
+          <p>Dropped needles: <span id="needle-count">0</span></p>
+          <p>Needles crossing lines: <span id="crossing-count">0</span></p>
+          <p>
+            Current Estimate of π: <span id="pi-value">Calculating...</span>
+          </p>
+        </div>
+        <div>
+          <p>frame rate: <span id="frame-rate">0</span></p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="sketch.js"></script>
+  </body>
+</html>
