@@ -6,18 +6,44 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #f0f0f0;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
 }
 
 main {
-  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+h1 {
+  margin-bottom: 2em;
 }
 
 #pi-calculation {
-  position: absolute;
+  /* position: absolute;
   top: 0px;
-  left: 0px;
+  left: 0px; */
   padding: 2em;
 
   width: 50%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  font-weight: 800;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
 }

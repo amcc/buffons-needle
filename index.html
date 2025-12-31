@@ -6,20 +6,38 @@
     <title>Pi with Needles</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://q5js.org/q5.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <section id="pi-calculation">
         <div>
-          <h1>Estimating Pi with Buffon's Needle</h1>
-          <p>Dropped needles: <span id="needle-count">0</span></p>
-          <p>Needles crossing lines: <span id="crossing-count">0</span></p>
+          <h1>Estimating π with Buffon's Needle</h1>
           <p>
-            Current Estimate of π: <span id="pi-value">Calculating...</span>
+            <span class="label">Current Estimate of π: </span
+            ><span id="pi-value" class="number">Calculating...</span>
+          </p>
+          <p>
+            <span class="label">Dropped needles: </span
+            ><span id="needle-count" class="number">0</span>
+          </p>
+          <p>
+            <span class="label">Needles crossing lines: </span
+            ><span id="crossing-count" class="number">0</span>
           </p>
         </div>
-        <div>
-          <p>frame rate: <span id="frame-rate">0</span></p>
+        <div class="visually-hidden">
+          <p>frame rate: <span id="frame-rate" class="number">0</span></p>
+          <p>
+            needles per frame:
+            <span id="needles-per-frame" class="number">0</span>
+          </p>
+          <p>needles drawn: <span id="needles-drawn" class="number">0</span></p>
         </div>
       </section>
     </main>
